@@ -5,14 +5,14 @@ import ConsumeApi from "../consumeApi"
 
 
 const Home = () => {
-    const { loading, error, data } = ConsumeApi('/index/')
+    const { loading, error, data } = ConsumeApi()
     return(
         <View>
             <Text>
-                {data[0].header}
+                {/* {data[0].header} */}
             </Text>
             <Text>
-                {data[0].text}
+                {/* {data[0].text} */}
             </Text>
         </View>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
 
-import Header from "./components/Header"
+import Header from "./components/Header/Index"
 import Home from "./components/Home"
 
 const App = () => {
@@ -16,7 +16,6 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1, 
-    marginTop: 40,
   }
 })
 
