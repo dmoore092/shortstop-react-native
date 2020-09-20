@@ -2,11 +2,13 @@ import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
 
 import Header from "./components/Header"
+import Home from "./components/Home"
 
 const App = () => {
   return(
     <View style={styles.container}>
-      <Header title="Hello World" />
+      <Header />
+      <Home />
     </View>
   )
 }
@@ -14,7 +16,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1, 
-    paddingTop: 60,
+    marginTop: 40,
   }
 })
 

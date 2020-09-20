@@ -5,13 +5,12 @@ export default function ConsumeApi(path) {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false)
     const [data, setData] = useState({data: []})
-
     useEffect(() => {
         setLoading(true)
         setError(false)
         axios({
             method: 'GET',
-            url: 'https://is-proxy.herokuapp.com/',
+            url: 'https://shortstop-laravel.herokuapp.com/api/',
             params: { path: path }
         }).then(res => {
             setData(res.data)

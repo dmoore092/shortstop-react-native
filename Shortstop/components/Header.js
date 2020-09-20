@@ -10,17 +10,17 @@ const Header = ({title}) => {
 }
 
 Header.defaultProps = {
-    title: "Hello World",
+    title: 'Athletic Prospects'
 }
 
 const styles = StyleSheet.create({
   header: {
     height: 60,
     padding: 15,
-    backgroundColor: 'darkslateblue'
+    backgroundColor:  '#bb0a1e'
   },
   text: {
-    color: 'white',
+    color: 'black',
     fontSize: 23,
     textAlign: 'center'
   }
