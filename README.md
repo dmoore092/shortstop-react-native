@@ -5,6 +5,6 @@ Check our this link to get started: https://reactnative.dev/docs/environment-set
 
 ## Running Dev environment
 
-Start Metro: `npx react-native start`
-Start Android `npx react-native run-android`
-Start iOS `npx react-native run-ios`
+Start Metro: `react-native start`
+Start Android `react-native run-android`
+Start iOS `react-native run-ios`

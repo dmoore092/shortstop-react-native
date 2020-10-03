@@ -5,7 +5,7 @@ import profile from '../../assets/images/profile-default.png'
 
 const Header = ({title}) => {
   let platformStyle = Platform.OS === 'ios' ? iosStyles: androidStyles;
-  console.log(platformStyle)
+  // console.log(platformStyle)
   return(
     <View style={platformStyle.header}>
       <Image source={logo} style={platformStyle.logo} />
@@ -25,6 +25,7 @@ const iosStyles = StyleSheet.create({
     flexDirection: 'row',
     height: 100,
     backgroundColor:  '#bb0a1e',
+    // backgroundColor:  'green',
     justifyContent: 'space-between',
   },
   logo: {

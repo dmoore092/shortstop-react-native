@@ -10,10 +10,11 @@ export default function ConsumeApi(path) {
         setError(false)
         axios({
             method: 'GET',
-            url: 'https://shortstop-laravel.herokuapp.com/api/index',
-            params: { path: path }
+            url: path,
+            // params: { path: path }
         }).then(res => {
-            setData(res.data)
+            // console.log(res.data[0])
+            setData(res.data[0])
             setLoading(false)
         }).catch(e => {
             console.log(e)
