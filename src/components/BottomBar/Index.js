@@ -3,24 +3,24 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import logo from '../../assets/images/black.png'
 import profile from '../../assets/images/profile-default.png'
 
-const Header = ({title}) => {
+const BottomBar = ({title}) => {
   let platformStyle = Platform.OS === 'ios' ? iosStyles: androidStyles;
   return(
     <View style={platformStyle.footer}>
         <TouchableOpacity>
-            <Text style={platformStyle.textLeft}>Home</Text>
+            <Text style={platformStyle.textLeft} routName={'Home'}>Home</Text>
         </TouchableOpacity>
         <TouchableOpacity>
-        <Text style={platformStyle.textCenter}>Browse Atheletes</Text>
+          <Text style={platformStyle.textCenter} routeName={'Browse'}>Browse Atheletes</Text>
         </TouchableOpacity>
         <TouchableOpacity>
-        <Text style={platformStyle.textRight}>Login</Text>
+          <Text style={platformStyle.textRight} routeName={'Login'}>Login</Text>
         </TouchableOpacity>
     </View>
   )
 }
 
-Header.defaultProps = {
+BottomBar.defaultProps = {
   title: "Athletic Prospects",
   textStyles: {
 
@@ -85,4 +85,4 @@ const styles = StyleSheet.create({
   
 })
 
-export default Header;
+export default BottomBar;

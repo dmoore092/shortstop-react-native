@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import logo from '../../assets/images/black.png'
 import profile from '../../assets/images/profile-default.png'
 
-const Header = ({title}) => {
+const TopBar = ({title}) => {
   let platformStyle = Platform.OS === 'ios' ? iosStyles: androidStyles;
   // console.log(platformStyle)
   return(
@@ -17,7 +17,7 @@ const Header = ({title}) => {
   )
 }
 
-Header.defaultProps = {
+TopBar.defaultProps = {
   title: "Athletic Prospects",
 }
 const iosStyles = StyleSheet.create({
@@ -92,4 +92,4 @@ const styles = StyleSheet.create({
   
 })
 
-export default Header;
+export default TopBar;
